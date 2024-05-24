@@ -27,6 +27,9 @@ dbConnection()
 //? Accept JSON:
 app.use(express.json())
 
+// ? Cors:
+app.use(require("cors"))
+
 //? Check Authentication:
 app.use(require('./src/middlewares/authentication'))
 
