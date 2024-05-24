@@ -2,6 +2,7 @@
 
 const express = require("express")
 const app = express()
+const cors = require("cors")
 
 /* ------------------------------------------------------- */
 //! Required Modules:
@@ -28,7 +29,7 @@ dbConnection()
 app.use(express.json())
 
 // ? Cors:
-app.use(require("cors"))
+app.use(cors())
 
 //? Check Authentication:
 app.use(require('./src/middlewares/authentication'))
