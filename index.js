@@ -35,7 +35,7 @@ app.use(cors())
 app.use(require('./src/middlewares/authentication'))
 
 //? res.getModelList():
-app.use(require('./src/middlewares/findSearchSortPage'))
+app.use(require('./src/middlewares/queryHandler'))
 
 /* ------------------------------------------------------- */
 //! Routes:
